@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #3a3e3b;
+}
+
+#game-title__wrapper {
+  height: 20vh;
+}
+
+#game-title {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  letter-spacing: 4px;
+}
+
+#score-box__wrapper {
+  height: 10vh;
+  max-width: 20vw;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  position: relative;
+}
+
+#player-score {
+  position: absolute;
+  top: 50%;
+  right: 89%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+#computer-score {
+  position: absolute;
+  top: 50%;
+  left: 83%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.title {
+  font-size: 1rem;
+}
+
+#choices {
+  max-width: 40vw;
+  padding-top: 5rem;
+  height: 20vh;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#rock,
+#paper,
+#scissors {
+  border-radius: 50%;
+  border: 2px solid white;
+  height: auto;
+  width: 15%;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.select {
+  border: 5px solid #08ad08 !important;
+  box-shadow: -1px 1px 12px 6px #08ad08;
+}
+
+.content {
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+#result {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+  #rock,
+  #paper,
+  #scissors {
+    border-radius: 50%;
+    border: 2px solid white;
+    height: auto;
+    width: 100%;
+    margin: 0 1rem;
+  }
+}
